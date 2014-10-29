@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Audio Manager</title>
+        <script type="text/javascript" src="vendor/require.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+        
+        require([
+            'AudioManager',
+        ], function (
+            AudioManager
+        ) {
+            "use strict";
+
+            // Setup debug window
+            //AudioManager.CreateAudioTrack(0);
+            //AudioManager.CreateAudioTrack(1);
+            //log(AudioManager.AudioTracks);
+            
+            AudioManager.PlayAudio("https://dl.dropboxusercontent.com/u/2011029/musik/Dodsdansen-40.mp3");
+            
+           // AudioManager.InitMixer("#mixer-container");
+           
+           // Create the visual mixer
+            AudioManager.InitMixer();
+        });
+    
+    </script>
+  </body>
+</html>
